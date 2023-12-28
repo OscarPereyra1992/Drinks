@@ -35,6 +35,7 @@ nav{
     width: 100%;
     height: 10vh;
     padding: 0vw 10vw;
+    z-index: 999;
  }
 
 nav a, i{
@@ -74,14 +75,16 @@ nav i{
     position: absolute;
     width: 40%;
     z-index: 2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
 #orange-cut{
     position: absolute;
     top: 10%;
     left: 32%;
-    width: 15%;
+    width: 22%;
     z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
 #orange{
@@ -90,6 +93,7 @@ nav i{
     z-index: 3;
     top: 55%;
     right: 30%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
 #leaf{
@@ -98,6 +102,7 @@ nav i{
     top: 10%;
     left: 0%;
     transform: rotate(60deg);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
 #leaf2{
@@ -106,6 +111,7 @@ nav i{
     transform: rotate(-90deg);
     position: absolute;
     width: 12%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
 
 #leaf3{
@@ -113,7 +119,7 @@ nav i{
     top: 5%;
     right: 0%;
     width: 20%;
-}
+ }
 
 .two{
     display: flex;
@@ -133,7 +139,7 @@ nav i{
  }
 
 .lft-two svg{
-    margin-top: 50vh;
+    margin-top: 65vh;
     width: 90%;
     transform: rotateX(50deg);
 }
@@ -161,10 +167,12 @@ nav i{
 }
 
 .card{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 2vh;
     width: 25vw;
     height: 70vh;
     margin-top: 10vh;
@@ -172,6 +180,53 @@ nav i{
     background-color: #ffff;
 }
 
+
+
 .card h1{
+    margin-top: 40vh;
     font-size: 3vw;
+}
+
+.card button{
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    color: #ffff;
+    background-color: rgb(0 139 71);
+    padding: 1vw 2vw;
+}
+
+.coca-logo{
+    position: absolute;
+    top: -25%;
+    width: 25vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+
+#cocacola{
+    top: -10%;
+    position: absolute;
+    width: 45%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+
+#sprite{
+    top: -9%;
+    position: absolute;
+    width: 42%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+.sprite-logo{
+    top: -24.9%;
+    position: absolute;
+    left: 13%;
+    width: 18vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
 }
